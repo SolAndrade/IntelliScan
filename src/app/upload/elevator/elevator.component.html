@@ -1,1 +1,22 @@
-<div id="three-container" style="width: 100vw;"></div>
+<body>
+  <button
+    (mousedown)="rotateLeft()"
+    (mouseup)="stopRotation()"
+    (mouseleave)="stopRotation()"
+    class="btn"
+  >
+    <fa-icon [icon]="faArrowLeft"></fa-icon>
+  </button>
+  <div
+    id="three-container"
+    style="width: 50vw; height: 25vh; overflow: hidden; margin: 0 auto"
+  ></div>
+  <button
+    (mousedown)="rotateRight()"
+    (mouseup)="stopRotation()"
+    (mouseleave)="stopRotation()"
+    class="btn"
+  >
+    <fa-icon [icon]="faArrowRight"></fa-icon>
+  </button>
+</body>
