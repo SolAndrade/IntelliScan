@@ -142,6 +142,8 @@ footer {
   background-color: #dff7e2;
   color: black;
   width: fit-content;
+  font-size: 14px;
+  width: 93%;
 }
 
 .chat-message-content {
