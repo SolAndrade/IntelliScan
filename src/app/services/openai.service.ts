@@ -7,7 +7,7 @@ import { map, Observable } from 'rxjs';
 })
 export class OpenaiService {
   private openAiApiUrl = 'https://api.openai.com/v1/chat/completions';
-  private openAiKey = 'aaaaaaa';
+  private openAiApiKey = "fml";
 
   private cloudinaryUploadUrl =
     'https://api.cloudinary.com/v1_1/intelliScan/image/upload';
@@ -35,7 +35,7 @@ export class OpenaiService {
   // Send image URL to OpenAI for analysis
   analyzeImage(imageUrl: string): Observable<any> {
     const headers = new HttpHeaders({
-      Authorization: `Bearer ${this.openAiKey}`,
+      Authorization: `Bearer ${this.openAiApiKey}`,
       'Content-Type': 'application/json',
     });
 

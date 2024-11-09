@@ -113,3 +113,9 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
+.elevator {
+  position: absolute;
+  height: 40vh;
+  width: 100%;
+}

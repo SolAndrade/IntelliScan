@@ -12,6 +12,7 @@ export class UploadComponent {
   faArrowLeft = faArrowLeft;
   faBell = faBell;
 
+
   constructor(private fb: FormBuilder) {}
 
   fillForm(response: any): any {
