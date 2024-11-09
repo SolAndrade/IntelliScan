@@ -7,7 +7,7 @@
   </div>
   <div class="analyze" *ngIf="selectedFile">
     <p class="file-name">{{ selectedFile.name }}</p>
-    <button (click)="processTrucho()" [disabled]="loading" class="use-image-btn">
+    <button (click)="processImage()" [disabled]="loading" class="use-image-btn">
       {{ loading ? "Processing..." : "Use this image" }}
     </button>
   </div>

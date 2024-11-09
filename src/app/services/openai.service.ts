@@ -7,7 +7,7 @@ import { map, Observable } from 'rxjs';
 })
 export class OpenaiService {
   private openAiApiUrl = 'https://api.openai.com/v1/chat/completions';
-  private openAiApiKey = "fml";
+  private openAiApiKey = "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";
 
   private cloudinaryUploadUrl =
     'https://api.cloudinary.com/v1_1/intelliScan/image/upload';
