@@ -1,0 +1,49 @@
+name: CI Build
+
+on:
+  push:
+    branches: 
+      
+main
+pull_request:
+  branches: 
+main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout the code from your repository
+      
+name: Checkout code
+      uses: actions/checkout@v3
+
+      # 2. Set up Node.js environment
+      
+name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18' # Use your project's Node.js version
+
+      # 3. Install dependencies
+      
+name: Install dependencies
+      run: npm install
+
+      # 4. Lint the code (optional)
+      
+name: Run Linter
+      run: npm run lint
+
+      # 5. Build the project
+      
+name: Build project
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      run: npm run build
+
+      # 6. Run tests (optional)
+      
+name: Run tests
+      run: npm test
