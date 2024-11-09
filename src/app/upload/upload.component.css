@@ -91,7 +91,7 @@ main {
   bottom: 0;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   width: 88%;
 }
 
@@ -116,5 +116,5 @@ main {
 
 .elevator {
   position: absolute;
-  top: 55%;
+  top: 52%;
 }

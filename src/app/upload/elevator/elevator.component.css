@@ -2,11 +2,13 @@
   border: none;
   background-color: #f1fff3;
   font-size: 20px;
+  height: 40px;
 }
 
 body {
   width: 87vw;
   display: flex;
   justify-content: space-between;
-  max-height: 25vh;
+  max-height: 20vh;
+  align-items: center;
 }
