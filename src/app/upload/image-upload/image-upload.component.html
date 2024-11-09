@@ -1,0 +1,20 @@
+<section class="image-upload-section">
+  <p class="image-upload-heading">Start a new survey</p>
+  <button (click)="useCamera()" class="camera-button">Use camera</button>
+  <div>
+    <label for="fileInput" class="upload-button">Upload existing image</label>
+    <input type="file" id="fileInput" (change)="onFileSelect($event)" hidden />
+  </div>
+  <div class="analyze" *ngIf="selectedFile">
+    <p class="file-name">{{ selectedFile.name }}</p>
+    <button (click)="processTrucho()" [disabled]="loading" class="use-image-btn">
+      {{ loading ? "Processing..." : "Use this image" }}
+    </button>
+  </div>
+  <div *ngIf="loading">
+    <p>Loading, please wait...</p>
+  </div>
+  <div *ngIf="errorMessage" class="error-message">
+    <p>{{ errorMessage }}</p>
+  </div>
+</section>

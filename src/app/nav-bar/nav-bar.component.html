@@ -1,0 +1,27 @@
+<nav>
+  <a routerLink="/home" routerLinkActive="active" [ngClass]="{ 'active': isActive('/home') }">
+    <div class="icon-container">
+      <fa-icon [icon]="faHome" class="nav-icon"></fa-icon>
+    </div>
+  </a>
+  <a routerLinkActive="active" [ngClass]="{ 'active': isActive('/upload') }">
+    <div class="icon-container">
+      <fa-icon [icon]="faMagnifyingGlassChart" class="nav-icon"></fa-icon>
+    </div>
+  </a>
+  <a routerLink="/upload" routerLinkActive="active" [ngClass]="{ 'active': isActive('/upload') }">
+    <div class="icon-container">
+      <fa-icon [icon]="faCamera" class="nav-icon"></fa-icon>
+    </div>
+  </a>
+  <a routerLink="/chat" routerLinkActive="active" [ngClass]="{ 'active': isActive('/chat') }">
+    <div class="icon-container">
+      <fa-icon [icon]="faMessage" class="nav-icon"></fa-icon>
+    </div>
+  </a>
+  <a routerLink="/chat" routerLinkActive="active" [ngClass]="{ 'active': isActive('/chat') }">
+    <div class="icon-container">
+      <fa-icon [icon]="faMessage" class="nav-icon"></fa-icon>
+    </div>
+  </a>
+</nav>

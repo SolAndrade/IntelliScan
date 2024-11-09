@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload</title>
+  </head>
+  <body>
+    <div class="image-upload-container" *ngIf="!form">
+      <app-image-upload (formData)="fillForm($event)"></app-image-upload>
+    </div>
+    <form [formGroup]="form" *ngIf="form" class="form-container">
+      <label>
+        Name:
+        <input formControlName="name" type="text" />
+      </label>
+      <label>
+        Location:
+        <input formControlName="location" type="text" />
+      </label>
+      <label>
+        Manufacturer:
+        <input formControlName="manufacturer" type="text" />
+      </label>
+      <label>
+        Model:
+        <input formControlName="model" type="text" />
+      </label>
+      <label>
+        Serial Number:
+        <input formControlName="serialNumber" type="text" />
+      </label>
+      <label>
+        Equipment Type:
+        <input formControlName="equipmentType" type="text" />
+      </label>
+      <label>
+        Size:
+        <input formControlName="size" type="text" />
+      </label>
+      <label>
+        Age:
+        <input formControlName="age" type="text" />
+      </label>
+      <label>
+        Type of Material:
+        <input formControlName="type_of_material" type="text" />
+      </label>
+      <label>
+        Condition:
+        <input formControlName="condition" type="text" />
+      </label>
+      <label>
+        Surveyor's Comments:
+        <textarea formControlName="surveyor_comments"></textarea>
+      </label>
+    </form>
+    <footer>
+      <app-nav-bar class="nav-bar"></app-nav-bar>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="welcome">
+          <h1 class="header-title">Hi, welcome back</h1>
+          <p class="header-subtitle">Good morning</p>
+        </div>
+        <div>
+          <button class="notifications-btn">
+            <fa-icon [icon]="faBell" class="bell-icon"></fa-icon>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="surveys-data-container">
+        <div class="surveys-data-section">
+          <div class="surveys-data-heading">
+            <fa-icon
+              [icon]="faSquareArrowUpRight"
+              class="surveys-data-icon"
+            ></fa-icon>
+            <p class="surveys-data-title">Completed Surveys</p>
+          </div>
+          <p class="surveys-data-nbr">100</p>
+        </div>
+        <div class="surveys-data-divider"></div>
+        <div class="surveys-data-section">
+          <div class="surveys-data-heading">
+            <fa-icon
+              [icon]="faSquareArrowUpRight"
+              class="surveys-data-icon icon-right"
+            ></fa-icon>
+            <p class="surveys-data-title">Pending Surveys</p>
+          </div>
+          <p class="surveys-data-nbr nbr-right">10</p>
+        </div>
+      </section>
+      <section class="itinerary-container">
+        <div class="itinerary-details-container">
+          <div class="itinerary-details-current">
+            <div class="itinerary-details-current-icon-container">
+              <fa-icon
+                [icon]="faPenRuler"
+                class="itinerary-details-current-icon"
+              ></fa-icon>
+            </div>
+            <p>Current Survey</p>
+          </div>
+          <div class="itinerary-details-right">
+            <div class="itinerary-details-vertical-divider"></div>
+            <div class="itinerary-details-place-container">
+              <div class="itinerary-details-place-section">
+                <fa-icon
+                  [icon]="faSquareArrowUpRight"
+                  class="itinerary-details-place-icon"
+                ></fa-icon>
+                <div>
+                  <p class="itinerary-details-place-title">Place</p>
+                  <p class="itinerary-details-place-name">Helsinki Factory</p>
+                </div>
+              </div>
+              <div class="itinerary-details-horizontal-divider"></div>
+              <div class="itinerary-details-place-section">
+                <fa-icon
+                  [icon]="faSquareArrowUpRight"
+                  class="itinerary-details-place-icon"
+                ></fa-icon>
+                <div>
+                  <p class="itinerary-details-place-title">Place</p>
+                  <p class="itinerary-details-place-name">Helsinki Factory</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="itinerary-agenda-container">
+          <div class="itinerary-agenda-section">
+            <div class="itinerary-agenda-place">
+              <p class="itinerary-agenda-place-location">Cablefactory</p>
+              <p class="itinerary-agenda-place-time">8:27 - April 30</p>
+            </div>
+            <div class="itinerary-agenda-divider"></div>
+            <p class="itinerary-agenda-status">Pending</p>
+            <div class="itinerary-agenda-divider"></div>
+            <p class="itinerary-agenda-equipment">100 equipment</p>
+          </div>
+          <div class="itinerary-agenda-section">
+            <div class="itinerary-agenda-place">
+              <p class="itinerary-agenda-place-location">Library</p>
+              <p class="itinerary-agenda-place-time">8:00 - April 24</p>
+            </div>
+            <div class="itinerary-agenda-divider"></div>
+            <p class="itinerary-agenda-status">Completed</p>
+            <div class="itinerary-agenda-divider"></div>
+            <p class="itinerary-agenda-equipment">50 equipment</p>
+          </div>
+          <div class="itinerary-agenda-section">
+            <div class="itinerary-agenda-place">
+              <p class="itinerary-agenda-place-location">Museum</p>
+              <p class="itinerary-agenda-place-time">9:29 - April 15</p>
+            </div>
+            <div class="itinerary-agenda-divider"></div>
+            <p class="itinerary-agenda-status">Completed</p>
+            <div class="itinerary-agenda-divider"></div>
+            <p class="itinerary-agenda-equipment">10 equipment</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <app-nav-bar class="nav-bar"></app-nav-bar>
+    </footer>
+  </body>
+</html>
