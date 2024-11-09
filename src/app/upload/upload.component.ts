@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { faArrowLeft, faBell } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-upload',
@@ -8,6 +9,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class UploadComponent {
   form: FormGroup | null = null;
+  faArrowLeft = faArrowLeft;
+  faBell = faBell;
 
   constructor(private fb: FormBuilder) {}
 

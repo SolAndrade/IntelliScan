@@ -9,52 +9,67 @@
     <div class="image-upload-container" *ngIf="!form">
       <app-image-upload (formData)="fillForm($event)"></app-image-upload>
     </div>
-    <form [formGroup]="form" *ngIf="form" class="form-container">
-      <label>
-        Name:
-        <input formControlName="name" type="text" />
-      </label>
-      <label>
-        Location:
-        <input formControlName="location" type="text" />
-      </label>
-      <label>
-        Manufacturer:
-        <input formControlName="manufacturer" type="text" />
-      </label>
-      <label>
-        Model:
-        <input formControlName="model" type="text" />
-      </label>
-      <label>
-        Serial Number:
-        <input formControlName="serialNumber" type="text" />
-      </label>
-      <label>
-        Equipment Type:
-        <input formControlName="equipmentType" type="text" />
-      </label>
-      <label>
-        Size:
-        <input formControlName="size" type="text" />
-      </label>
-      <label>
-        Age:
-        <input formControlName="age" type="text" />
-      </label>
-      <label>
-        Type of Material:
-        <input formControlName="type_of_material" type="text" />
-      </label>
-      <label>
-        Condition:
-        <input formControlName="condition" type="text" />
-      </label>
-      <label>
-        Surveyor's Comments:
-        <textarea formControlName="surveyor_comments"></textarea>
-      </label>
-    </form>
+    <header *ngIf="form">
+      <div class="header-content">
+        <fa-icon [icon]="faArrowLeft" class="back-icon"></fa-icon>
+        <p class="header-title">
+          {{ form.value.name }}
+        </p>
+        <div>
+          <button class="notifications-btn">
+            <fa-icon [icon]="faBell" class="bell-icon"></fa-icon>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main *ngIf="form">
+      <form [formGroup]="form" class="form-container">
+        <label class="label">
+          Name
+          <input formControlName="name" type="text" class="input"/>
+        </label>
+        <label class="label">
+          Location
+          <input formControlName="location" type="text" class="input"/>
+        </label>
+        <label class="label">
+          Manufacturer
+          <input formControlName="manufacturer" type="text" class="input"/>
+        </label>
+        <label class="label">
+          Model
+          <input formControlName="model" type="text" class="input"/>
+        </label>
+        <label class="label">
+          Serial Number
+          <input formControlName="serialNumber" type="text" class="input"/>
+        </label>
+        <label class="label">
+          Equipment Type
+          <input formControlName="equipmentType" type="text" class="input"/>
+        </label>
+        <label class="label">
+          Size:
+          <input formControlName="size" type="text" class="input"/>
+        </label>
+        <label class="label">
+          Age:
+          <input formControlName="age" type="text" class="input"/>
+        </label>
+        <label class="label">
+          Type of Material
+          <input formControlName="type_of_material" type="text" class="input"/>
+        </label>
+        <label class="label">
+          Condition
+          <input formControlName="condition" type="text" class="input"/>
+        </label>
+        <label class="label" style="grid-column: span 2;">
+          Surveyor's Comments
+          <textarea formControlName="surveyor_comments" class="input comment-input"></textarea>
+        </label>
+      </form>
+    </main>
     <footer>
       <app-nav-bar class="nav-bar"></app-nav-bar>
     </footer>
