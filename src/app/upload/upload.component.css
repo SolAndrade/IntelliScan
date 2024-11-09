@@ -87,7 +87,7 @@ main {
   position: absolute;
   z-index: 1;
   padding: 30px 24px;
-  height: 80vh;
+  height: 65vh;
   bottom: 0;
   display: flex;
   flex-direction: column;
@@ -116,5 +116,5 @@ main {
 
 .elevator {
   position: absolute;
-  top: 52%;
+  bottom: 0;
 }

@@ -11,7 +11,15 @@
     </div>
     <header *ngIf="form">
       <div class="header-content">
-        <fa-icon [icon]="faArrowLeft" class="back-icon"></fa-icon>
+        <button (click)="resetForm()" style="border: none; background-color: #00d09e;">
+          <fa-icon
+            [icon]="faArrowLeft"
+            class="back-icon"
+            routerLink="/upload"
+            routerLinkActive="active"
+          ></fa-icon>
+        </button>
+
         <p class="header-title">
           {{ form.value.name }}
         </p>
@@ -26,54 +34,57 @@
       <form [formGroup]="form" class="form-container">
         <label class="label">
           Name
-          <input formControlName="name" type="text" class="input"/>
+          <input formControlName="name" type="text" class="input" />
         </label>
         <label class="label">
           Location
-          <input formControlName="location" type="text" class="input"/>
+          <input formControlName="location" type="text" class="input" />
         </label>
         <label class="label">
           Manufacturer
-          <input formControlName="manufacturer" type="text" class="input"/>
+          <input formControlName="manufacturer" type="text" class="input" />
         </label>
         <label class="label">
           Model
-          <input formControlName="model" type="text" class="input"/>
+          <input formControlName="model" type="text" class="input" />
         </label>
         <label class="label">
           Serial Number
-          <input formControlName="serialNumber" type="text" class="input"/>
+          <input formControlName="serialNumber" type="text" class="input" />
         </label>
         <label class="label">
           Equipment Type
-          <input formControlName="equipmentType" type="text" class="input"/>
+          <input formControlName="equipmentType" type="text" class="input" />
         </label>
         <label class="label">
           Size:
-          <input formControlName="size" type="text" class="input"/>
+          <input formControlName="size" type="text" class="input" />
         </label>
         <label class="label">
           Age:
-          <input formControlName="age" type="text" class="input"/>
+          <input formControlName="age" type="text" class="input" />
         </label>
         <label class="label">
           Type of Material
-          <input formControlName="type_of_material" type="text" class="input"/>
+          <input formControlName="type_of_material" type="text" class="input" />
         </label>
         <label class="label">
           Condition
-          <input formControlName="condition" type="text" class="input"/>
+          <input formControlName="condition" type="text" class="input" />
         </label>
-        <label class="label" style="grid-column: span 2;">
+        <label class="label" style="grid-column: span 2">
           Surveyor's Comments
-          <textarea formControlName="surveyor_comments" class="input comment-input"></textarea>
+          <textarea
+            formControlName="surveyor_comments"
+            class="input comment-input"
+          ></textarea>
         </label>
       </form>
       <div class="elevator">
         <app-elevator></app-elevator>
       </div>
     </main>
-    <footer>
+    <footer *ngIf="!form">
       <app-nav-bar class="nav-bar"></app-nav-bar>
     </footer>
   </body>

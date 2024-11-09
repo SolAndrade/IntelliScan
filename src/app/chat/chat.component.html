@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <p class="header-title">Virtual Assistant</p>
+        <div>
+          <button class="notifications-btn">
+            <fa-icon [icon]="faBell" class="bell-icon"></fa-icon>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="chat-container">
+        <div class="chat-messages-container">
+          <div class="chat-message">
+            <p class="chat-message-content">Welcome, I am your virtual assistant. What can I help you with today?</p>
+          </div>
+          <div class="chat-message chat-message-right">
+            <p class="chat-message-content">Hello! How many surveys have I conducted in Helsinki?</p>
+          </div>
+          <div class="chat-message">
+            <p class="chat-message-content">100 surveys</p>
+          </div>
+          <div class="chat-message chat-message-right">
+            <p class="chat-message-content">Which building had the most equipment?</p>
+          </div>
+          <div class="chat-message">
+            <p class="chat-message-content">Building A in Helsinki with 200 equipments</p>
+          </div>
+        </div>
+        <div class="chat-input">
+          <input type="text" class="chat-input-field" />
+          <button class="chat-send-btn">
+            <fa-icon [icon]="faPaperPlane" class="send-icon"></fa-icon>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <app-nav-bar class="nav-bar"></app-nav-bar>
+    </footer>
+  </body>
+</html>

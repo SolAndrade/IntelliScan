@@ -46,7 +46,7 @@ export class ImageUploadComponent {
     }
   }
 
-  processTrucho(): void {
+  processMock(): void {
     const res = {
       name: 'TULOLIMAPUHALLIN',
       location_in_building: 'kellari-5.krs',

@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { UploadComponent } from './upload/upload.component';
+import { ChatComponent } from './chat/chat.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent, data: {} },
   { path: 'upload', component: UploadComponent, data: {} },
+  { path: 'chat', component: ChatComponent, data: {} },
   { path: '**', redirectTo: 'home' },
 ];
 

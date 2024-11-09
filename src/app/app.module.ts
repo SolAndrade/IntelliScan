@@ -13,6 +13,7 @@ import { ImageUploadComponent } from './upload/image-upload/image-upload.compone
 import { ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ElevatorComponent } from './upload/elevator/elevator.component';
+import { ChatComponent } from './chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ElevatorComponent } from './upload/elevator/elevator.component';
     UploadComponent,
     ImageUploadComponent,
     ElevatorComponent,
+    ChatComponent,
   ],
   imports: [
     BrowserModule,
