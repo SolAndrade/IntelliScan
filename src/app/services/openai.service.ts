@@ -8,7 +8,7 @@ import { environment } from '../../environment/environment';
 })
 export class OpenaiService {
   private openAiApiUrl = 'https://api.openai.com/v1/chat/completions';
-  private apiKey = process.env['openAiApiKey'];
+  private apiKey = "nah";
 
   private cloudinaryUploadUrl =
     'https://api.cloudinary.com/v1_1/intelliScan/image/upload';
