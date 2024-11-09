@@ -4,7 +4,7 @@ import { faBell, faSquareArrowUpRight, faPenRuler } from '@fortawesome/free-soli
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+  styleUrls: ['./home.component.css', './itinerary.css'],
 })
 export class HomeComponent {
   faBell = faBell;
