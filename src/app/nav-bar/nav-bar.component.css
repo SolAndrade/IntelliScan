@@ -9,6 +9,8 @@ nav {
   justify-content: space-between;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  position: relative;
+  align-self: stretch;
 }
 
 .nav-icon {

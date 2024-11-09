@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faBell, faSquareArrowUpRight, faPenRuler } from '@fortawesome/free-solid-svg-icons';
+import { faBell, faSquareArrowUpRight, faPenRuler, faBuilding, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -10,4 +10,6 @@ export class HomeComponent {
   faBell = faBell;
   faSquareArrowUpRight = faSquareArrowUpRight;
   faPenRuler = faPenRuler;
+  faBuilding = faBuilding;
+  faLocationDot = faLocationDot;
 }

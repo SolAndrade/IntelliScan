@@ -2,20 +2,19 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  height: 100vh;
   overflow: hidden;
   background-color: #00d09e;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   font-family: "Poppins", sans-serif;
+  overflow: auto;
 }
 
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 35px;
+  padding: 50px 35px 0px;
 }
 
 .header-title {
@@ -51,10 +50,10 @@ main {
 }
 
 .surveys-data-container {
+  margin: 30px 0;
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 20px 0;
   gap: 10px;
   align-items: center;
 
@@ -102,11 +101,10 @@ main {
   }
 }
 
-
-
 footer {
   z-index: 20;
   bottom: 0;
   position: absolute;
   width: 100%;
+  align-self: stretch;
 }
