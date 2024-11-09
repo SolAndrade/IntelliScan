@@ -6,7 +6,10 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <div *ngIf="!isMobile" class="desktop-warning">
+      This web is only supported on mobile devices.
+    </div>
+    <header *ngIf="isMobile">
       <div class="header-content">
         <div class="welcome">
           <h1 class="header-title">Hi, welcome back</h1>
@@ -19,7 +22,7 @@
         </div>
       </div>
     </header>
-    <main>
+    <main *ngIf="isMobile">
       <section class="surveys-data-container">
         <div class="surveys-data-section">
           <div class="surveys-data-heading">
@@ -117,7 +120,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer *ngIf="isMobile">
       <app-nav-bar class="nav-bar"></app-nav-bar>
     </footer>
   </body>
