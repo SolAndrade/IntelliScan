@@ -1,6 +1,7 @@
 body {
   width: 100%;
   margin: 0;
+  height: 100vh;
   padding: 0;
   overflow: hidden;
   background-color: #00d09e;
